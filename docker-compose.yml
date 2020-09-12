@@ -1,0 +1,6 @@
+version: '3'
+services:
+  whichwhale:
+    image: vijaystroup/whichwhale
+    ports:
+      - "80:5000"
