@@ -3,7 +3,7 @@
   {% block content %}
     <img src="{{ url_for('static', filename='whale.png') }}" class="img-fluid" alt="Whale Not Showing :(">
     <div class="info-container">
-      <p class="info">whale: 4c01db0b339c</p>
-      <p class="info">from: 127.0.0.1</p>
+      <p class="info">whale: {{ hostname }}</p>
+      <p class="info">from: {{ client }}</p>
     </div>
   {% endblock content %}
