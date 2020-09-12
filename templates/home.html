@@ -1,9 +1,8 @@
 {% extends "base.html" %}
 
   {% block content %}
-    <div class="containerr">
-      <!-- <img src="{{ url_for('static', filename='whale.png') }}" alt="Whale Not Showing :("> -->
-      <img src="{{ url_for('static', filename='whale.png') }}" class="img-fluid" alt="Responsive image">
-      <div class="host">4c01db0b339c</div>
-    </div>
+    <section class="my-container">
+        <img src="{{ url_for('static', filename='whale.png') }}" class="img-fluid" alt="Whale Not Showing :(">
+        <p class="host">4c01db0b339c</p>
+    </section>
   {% endblock content %}
