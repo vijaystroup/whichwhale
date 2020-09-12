@@ -20,3 +20,7 @@ docker run \
     cd whichwhale && \
     docker stack deploy -c docker-compose.yml
 ```
+
+### Links
+[GitHub Repo](https://github.com/VijayStroup/whichwhale)
+[DockerHub Repo](https://hub.docker.com/r/vijaystroup/whichwhale)
