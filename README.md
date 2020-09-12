@@ -16,7 +16,7 @@ docker run \
 ```
 ### Swarm
 ```bash
-    git clone https://github.com/VijayStroup/whichwhale.git
-    cd whichwhale
+    git clone https://github.com/VijayStroup/whichwhale.git && \
+    cd whichwhale && \
     docker stack deploy -c docker-compose.yml
 ```
