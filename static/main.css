@@ -20,6 +20,14 @@ a {
   text-decoration: none;
 }
 
+.title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1em;
+  font-size: 20px;
+}
+
 .my-footer {
   display: flex;
   justify-content: center;
@@ -41,15 +49,13 @@ a {
   justify-content: center;
   align-items: center;
   position: relative;
+  text-align: center;
 }
 
-.host {
+.info {
   background-color: #00000000;
-  color: white;
-  font-size: 5vw;
-  position: absolute;
-  top: 50%;
-  left: 28%;
+  color: black;
+  font-size: 4vw;
 }
 
 .fa-heart {
