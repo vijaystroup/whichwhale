@@ -80,6 +80,10 @@ img {
   color: #26539E;
 }
 
+.terms-text {
+  font-size: 40px;
+}
+
 @media only screen and (max-width: 600px) {
   .my-footer {
     font-size: .8em;
