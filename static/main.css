@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap');
+
 *, html, body {
   margin: 0;
   padding: 0;
@@ -10,12 +12,14 @@ img {
 .container {
   position: relative;
   text-align: center;
-  color: white;
+  color: black;
+  font-family: 'Nunito', sans-serif;
 }
 
 .centered {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 55%;
+  left: 28%;
+  font-size: 20px;
+  transform: translate(50%, 0%);
 }
