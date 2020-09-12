@@ -10,7 +10,10 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 <body>
-  {% block content %}{% endblock %}
+  <section class="my-container">
+    <a href="/" class="title">Which<span style="color:#1595EA;">Whale</span></a>
+    {% block content %}{% endblock %}
+  </section>
   <footer class="my-footer">
     <p>Made with <i class="fas fa-heart"></i> by <a href="https://www.vijaystroup.com" target="_blank" id="author">Vijay Stroup</a></p>
     <a id="terms" href="/terms">Terms</a>
