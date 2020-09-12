@@ -1,5 +1,5 @@
 import socket
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     hostname = socket.gethostname()
-    return f'Hello World: {hostname}'
+    return render_template('home.html', hostname=hostname)
 
 
 if __name__ == '__main__':
