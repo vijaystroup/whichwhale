@@ -6,8 +6,13 @@
   <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">
   <title>WhichWhale</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
 </head>
 <body>
   {% block content %}{% endblock %}
+  <footer>
+    <p>Made with <i class="fas fa-heart"></i> by <a href="https://www.vijaystroup.com" id="author">Vijay Stroup</a></p>
+    <a id="terms">Terms</a>
+  </footer>
 </body>
 </html>
