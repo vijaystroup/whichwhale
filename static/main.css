@@ -11,13 +11,14 @@ html, body {
   height: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 img {
   width: auto;
   height: 50%;
-}
-
-a {
-  text-decoration: none;
+  padding-bottom: 5%;
 }
 
 .title {
@@ -26,20 +27,6 @@ a {
   left: 0;
   padding: 1em;
   font-size: 20px;
-}
-
-.my-footer {
-  display: flex;
-  justify-content: center;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  padding: 15px;
-  font-size: 2vw;
-  -webkit-box-shadow: 0 0 30px 0 rgba(0,0,0,.15);
-  -moz-box-shadow: 0 0 30px 0 rgba(0,0,0,.15);
-  box-shadow: 0 0 30px 0 rgba(0,0,0,.15);
 }
 
 .my-container {
@@ -52,10 +39,29 @@ a {
   text-align: center;
 }
 
+.info-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .info {
   background-color: #00000000;
   color: black;
-  font-size: 4vw;
+  font-size: 40px;
+}
+
+.my-footer {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 15px;
+  font-size: 1em;
+  -webkit-box-shadow: 0 0 30px 0 rgba(0,0,0,.15);
+  -moz-box-shadow: 0 0 30px 0 rgba(0,0,0,.15);
+  box-shadow: 0 0 30px 0 rgba(0,0,0,.15);
 }
 
 .fa-heart {
@@ -76,6 +82,9 @@ a {
 
 @media only screen and (max-width: 600px) {
   .my-footer {
-    font-size: 3vw;
+    font-size: .8em;
+  }
+  .info-container {
+    padding-top: 3em;
   }
 }
