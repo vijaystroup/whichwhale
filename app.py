@@ -1,3 +1,4 @@
+import datetime
 import socket
 from flask import Flask, render_template, request
 
@@ -7,8 +8,8 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     hostname = socket.gethostname()
-    client = request.remote_addr
-    return render_template('home.html', hostname=hostname, client=client)
+    time = datetime.datetime.utcnow()
+    return render_template('home.html', hostname=hostname, time=time)
 
 @app.route('/terms')
 def terms():
