@@ -18,9 +18,10 @@ docker run \
 ```bash
     git clone https://github.com/VijayStroup/whichwhale.git && \
     cd whichwhale && \
-    docker stack deploy -c docker-compose.yml
+    docker stack deploy -c docker-compose.yml whichwhale
 ```
 
 ### Links
 [GitHub Repo](https://github.com/VijayStroup/whichwhale)
+
 [DockerHub Repo](https://hub.docker.com/r/vijaystroup/whichwhale)
