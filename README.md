@@ -14,11 +14,20 @@ docker run \
     -p 80:5000
     vijaystroup/whichwhale
 ```
+
 ### Swarm
 ```bash
 git clone https://github.com/VijayStroup/whichwhale.git && \
     cd whichwhale && \
     docker stack deploy -c docker-compose.yml whichwhale
+```
+
+### Traefik
+```bash
+export DOMAIN=whichwhale.example.com
+git clone https://github.com/VijayStroup/whichwhale.git && \
+    cd whichwhale && \
+    docker stack deploy -c docker-compose.traefik.yml whichwhale
 ```
 
 ### Links

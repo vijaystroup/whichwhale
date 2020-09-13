@@ -1,0 +1,25 @@
+version: '3'
+services:
+  whichwhale:
+    image: vijaystroup/whichwhale
+    networks:
+      - traefik-public
+    deploy:
+      mode: replicated
+      replicas: 3
+      labels:
+        - traefik.enable=true
+        - traefik.docker.network=traefik-public
+        - traefik.constraint-label=traefik-public
+        - traefik.http.routers.whichwhale-http.rule=Host(`${DOMAIN?Variable not set}`)
+        - traefik.http.routers.whichwhale-http.entrypoints=http
+        - traefik.http.routers.whichwhale-http.middlewares=https-redirect
+        - traefik.http.routers.whichwhale-https.rule=Host(`${DOMAIN?Variable not set}`)
+        - traefik.http.routers.whichwhale-https.entrypoints=https
+        - traefik.http.routers.whichwhale-https.tls=true
+        - traefik.http.routers.whichwhale-https.tls.certresolver=le
+        - traefik.http.services.whichwhale.loadbalancer.server.port=5000
+
+networks:
+  traefik-public:
+    external: true
